@@ -12,7 +12,8 @@ Library.ShowToggleFrameInKeybinds = true
 local Window = Library:CreateWindow({
 	Title = "Moon Hub",
 	Footer = "version: tester",
-	Icon = 84833945573142,
+	Icon = 5012126105,
+	IconSize = UDim2.fromOffset(20, 20),
 	NotifySide = "Right",
 	ToggleKeybind = Enum.KeyCode.LeftAlt,
 	Font = Enum.Font.Fantasy,
@@ -25,10 +26,10 @@ local Tabs = {
 }
 
 
-local MainGroup = Tabs.Main:AddLeftGroupbox("Example Groupbox", "moon")
+local MainGroup = Tabs.Main:AddLeftGroupbox("Groupbox", "moon")
 
 MainGroup:AddLabel("SecondTestLabel", {
-	Text = "Este texto necesita estar largo para ver si realmente funciona el Wrap y asi tener una conclusion mucho mas acertada",
+	Text = "This text needs to be long to see if Wrap really works and thus arrive at a much more accurate conclusion.",
 	DoesWrap = true,
 })
 
@@ -82,7 +83,7 @@ MenuGroup:AddDropdown("DPIDropdown", {
 })
 MenuGroup:AddDivider()
 MenuGroup:AddLabel("Menu bind")
-	:AddKeyPicker("MenuKeybind", { Default = "RightShift", NoUI = true, Text = "Menu keybind" })
+	:AddKeyPicker("MenuKeybind", { Default = "LeftAlt", NoUI = true, Text = "Menu keybind" })
 
 MenuGroup:AddButton("Unload", function()
 	Library:Unload()
